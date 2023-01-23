@@ -42,10 +42,14 @@ header {
     z-index: 1;
   }
 
-  p {
+  /**p {
     margin-bottom: 15px;
-  }
+  }**/
   
+  br {
+    margin-bottom: 5px;
+  }
+
   /* A fallback image instead of a video for devices that commonly do not support the HTML5 video element */
   
   @media (pointer: coarse) and (hover: none) {
