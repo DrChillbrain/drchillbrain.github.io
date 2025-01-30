@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <title>Casey Topp Portfolio</title>
+    <style>
+      .jersey-10-regular {
+        font-family: "Jersey 10", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      body {
+        font-family: "Jersey 10", sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+      .hat {
+        margin: 0% 0;
+        transition: transform 0.1s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+      }
+      .hatImg {
+        width: 70%;
+        cursor: pointer;
+        height: auto;
+      }
+      .hatImg1:hover {
+        content: url("hatimg/LeaderHatOpen.png");
+      }
+      .hatImg2:hover {
+        content: url("hatimg/CollaborationHatOpen.png");
+      }
+      .hatImg3:hover {
+        content: url("hatimg/CreativeTechHatOpen.png");
+      }
+      .hatImg4:hover {
+        content: url("hatimg/GameHatOpen.png");
+      }
+      .hatImg5:hover {
+        content: url("hatimg/DigitalMarketingHatOpen.png");
+      }
+      .hatImg6:hover {
+        content: url("hatimg/GraphicHatOpen.png");
+      }
+      .hat-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.1s ease, opacity 0.1s ease;
+      }
+      .hat-content.open {
+        max-height: 5500px;
+        opacity: 1;
+      }
+      .project {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+      }
+      .inlineImg {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+      }
+      .centerImg {
+        display: block;
+        margin: 0 auto;
+      }
+      .centerFrame {
+        display: block;
+        margin: 0 auto;
+      }
+      @media (min-width: 768px) {
+        .hat {
+          width: 85%;
+        }
+        .hatImg {
+          width: 50%;
+        }
+      }
+      body {
+        background: linear-gradient(
+          135deg,
+          #000b0b 25%,
+          #001515 25%,
+          #001515 50%,
+          #000b0b 50%,
+          #000b0b 75%,
+          #001515 75%,
+          #001515 100%
+        );
+        background-size: 56.57px 56.57px;
+        animation: scrollBackground 1.5s linear infinite;
+        will-change: background-position;
+      }
+
+      @keyframes scrollBackground {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 56.57px 56.57px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        body {
+          font-size: 1.2rem;
+          padding: 0 10px;
+        }
+        .hat {
+          width: 80%;
+        }
+        .hat-content {
+          width: 80%;
+        }
+        .hatImg {
+          width: 90%;
+        }
+        .inlineImg {
+          width: 50%;
+        }
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+        .verticalVideo {
+          height: 400px;
+        }
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 90%;
+        margin: 2rem 0;
+      }
+      .image-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+      .image-grid img {
+        -webkit-transition: 0.1s all;
+        transition: 0.1s all;
+      }
+      .image-grid img:hover {
+        -webkit-filter: brightness(50%);
+        filter: brightness(50%);
+      }
+      @media (max-width: 767px) {
+        .image-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-bottom: 0.5rem">Casey Topp</h1>
+    <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+      Leader, Developer, Artist, Digital Marketer, Creative Technologist...
+    </h3>
+    <h2 style="margin-top: 0.5rem">I wear a lot of hats.</h2>
+    <div class="hat">
+      <img
+        src="hatimg/LeaderHatClosed.png"
+        class="hatImg1 hatImg"
+        alt="Leadership Hat"
+        onclick="toggleHatContent(1)"
+      />
+      <div class="hat-content" id="hat-content-1">
+        <div class="project">
+          <h2>Colossal Kickoff</h2>
+          <h3>February 2024-Present</h3>
+          <img src="img/CKLogoShadow.png" class="centerImg" width="50%" />
+          <p>
+            An assymetric arcade sports game where three Humans team up to take
+            down a colossal Monster in action packed, highly lethal Soccer
+            matches! Dominate as five monsters with totally unique abilities and
+            play styles, or team up as the humans to outsmart the brute, in
+            chaotic arenas all across the world.
+          </p>
+          <p>
+            Colossal Kickoff is a fully featured title launching in 2025 on
+            Steam. I'm the acting Project Manager for the game, in addition to
+            supplemental programming, and the lead on graphic design, marketing,
+            and social media.
+          </p>
+          <p>
+            I coordinated our team working in two-week sprints to deliver
+            functioning builds with new and pollished content in periods of six
+            weeks.
+          </p>
+          <iframe
+            class="centerFrame"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/jgZdn3ZduhM?si=lWT0__1dg7GpxnxJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="project">
+          <img
+            src="img/icp.svg"
+            class="inlineImg"
+            alt="ICAgile Certified Professional"
+          />
+          <h2>ICAgile Professional Certification</h2>
+          <h3>April 2024</h3>
+          <p>
+            I've undergone a thorough training process in the Agile methodology
+            for team coordination and leadership. <br />
+            <a
+              href="https://www.icagile.com/credentials/d0565468-b063-4e2b-b770-df6f028dcf2a"
+              class="link-primary"
+              >View Credential.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hat">
+      <img
+        src="hatimg/CollaborationHatClosed.png"
+        class="hatImg2 hatImg"
+        alt="Collaboration Hat"
+        onclick="toggleHatContent(2)"
+      />
+      <div class="hat-content" id="hat-content-2">
+        <div class="project">
+          <h2>Interactive Physical Therapy Project</h2>
+          <h3>June 2024</h3>
+          <p>
+            In collaboration with
+            <a href="https://neuro-physio.co.uk/"
+              >Birkdale Neuro-Rehab of London, England</a
+            >, our five-person team worked to create an innovative physical
+            therapy solution for recovering stroke victims. Our prototype was
+            fully engineered from the ground-up, and delivered to our customer,
+            in a 2-week period of brainstorming and development. It features
+            both hardware and software to create an immersive and engaging
+            therapeutic experience.
+          </p>
+          <h3>Controller</h3>
+          <img src="img/controller.jpg" class="centerImg" width="20%" />
+          <p>
+            The prototype controller we created for the project. It employs an
+            Arduino connected to a bluetooth module and some concealed circuitry
+            connected to a pressure sensor to allow the user to control video
+            games by squeezing their hand. In combination with an electrode
+            attached to the upper arm, this allows patients to practice
+            regaining fine motor control of their hands after suffering from a
+            stroke or other traumatic experience.
+          </p>
+          <h3>Report</h3>
+          <p>
+            The full 49 page report, including regulatory concerns, the
+            brainstorming and design process, our group's roles on the project,
+            and notes from the study, can be found here.<br />
+            <iframe
+              class="centerFrame textDoc"
+              width="100%"
+              height="1050px"
+              src="https://docs.google.com/document/d/1-EVbrYUsoWxu-Y4ADTsVRjRrWkz791YY6Fi8Q1HRWOU/pub"
+            ></iframe>
+          </p>
+          <h3>In Action</h3>
+          <p>
+            Watch a demo of the contoroller, alongside the three video games we
+            created for it, in action.<br />
+            <iframe
+              class="centerFrame verticalVideo"
+              src="https://drive.google.com/file/d/1-Wg10qj_doCc9ERC5j8OpA72QtMFyCKd/preview"
+              width="640"
+              height="480"
+              allow="autoplay"
+            ></iframe>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hat">
+      <img
+        src="hatimg/CreativeTechHatClosed.png"
+        class="hatImg3 hatImg"
+        alt="Creative Tech Hat"
+        onclick="toggleHatContent(3)"
+      />
+      <div class="hat-content" id="hat-content-3">
+        <div class="project">
+          <h2>Snowy Mountains Virtual Production Set</h2>
+          <h3>November 2024</h3>
+          <p>
+            A fully immersive Virtual Production set, depicting a snowy
+            mountainstop in a scenic mountain range at sunrise. Created and
+            rendered in real time with Unreal Engine, controlled using
+            TouchDesigner, and composited and displayed to Miami University's XR
+            Stage using Disguise Media Server hardware and Diguise Designer
+            software.
+          </p>
+          <p>
+            <iframe
+              class="centerFrame"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/yfyeuOV73-0?si=-O5Ngcccf7lpvnbz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </div>
+        <div class="project">
+          <img
+            src="img/DigsuiseLogo.png"
+            class="inlineImg"
+            alt="Disguise Logo"
+          />
+          <h2>Disguise: Designer Esentials Certification</h2>
+          <h3>December 2024</h3>
+          I've completed training for use of Disguise Designer software for show
+          programming by an industry veteran.<br />
+          <a href="PortfolioDocs/DisguiseDesignerEssentialsWorkshop.pdf"
+            >View Credential.</a
+          >
+          <h2>Disguise: System Integration Certification</h2>
+          <h3>December 2024</h3>
+          I've completed training for Disguise Designer software for systems
+          programming, networking, and integration to create smooth and
+          efficient shows.<br />
+          <a href="PortfolioDocs/DisguiseSystemsIntegrationWorkshop.pdf"
+            >View Credential.</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="hat">
+      <img
+        src="hatimg/GameHatClosed.png"
+        class="hatImg4 hatImg"
+        alt="Game Dev Hat"
+        onclick="toggleHatContent(4)"
+      />
+      <div class="hat-content" id="hat-content-4">
+        <div class="project">
+          <h2>Tamer Tournament</h2>
+          <h3>May 2023</h3>
+          <iframe
+            class="centerFrame"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zH4W9TtVoFs?si=RnxCalwUhEE5SmhN"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p>
+            A tabletop drafting game inspired by the Auto-Battler genre, where
+            players assemble and train a team of creatures as part of a
+            tournament bracket. It was created in two stages over a period of
+            four months, in collaboration with two artists, Sadie Zeedrich and
+            Elizabth Cool Leitzell.
+          </p>
+          <p>
+            The game features 60 unique cards and gameplay that's easy to learn,
+            but has enough depth to encourage replaying and mastering its
+            mechanics. The game is currently released in a self-published state
+            through The Game Crafter through two seperate editions.
+          </p>
+          <p>
+            <a href="tamertournament.html"
+              >Click here to visit the game's dedicated website.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hat">
+      <img
+        src="hatimg/DigitalMarketingHatClosed.png"
+        class="hatImg5 hatImg"
+        alt="Digital Marketing Hat"
+        onclick="toggleHatContent(5)"
+      />
+      <div class="hat-content" id="hat-content-5">
+        <div class="project">
+          <h2>The Cornerstone Shop: Keepsake Gift Cards</h2>
+          <h3>January 2025</h3>
+          <p>
+            THIS SECTION IS WIP. tldr i'm working with a local business on
+            rethinking the traditional approach to gift cards to help drive new
+            and returning customer engagement through social media marketing
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hat">
+      <img
+        src="hatimg/GraphicHatClosed.png"
+        class="hatImg6 hatImg"
+        alt="Graphic Design Hat"
+        onclick="toggleHatContent(6)"
+      />
+      <div class="hat-content" id="hat-content-6">
+        <div class="project">
+          <h2>On Borrowed Time Animated Poster</h2>
+          <h3>November 2023</h3>
+          <img src="img/toppcm_final_gif.gif" class="centerImg" width="30%" />
+          <p>Created using Adobe Photoshop and Adobe After Effects.</p>
+        </div>
+        <div class="project">
+          <h2>Animated Logo</h2>
+          <h3>October 2023</h3>
+          <img src="img/animatedlogo.gif" class="centerImg" width="60%" />
+          <p>Created with Adobe After Effects and Adobe Illustrator.</p>
+        </div>
+        <div class="project">
+          <h2>Branding Package</h2>
+          <h3>October 2023</h3>
+          <img src="img/stationary_toppcm.jpg" class="centerImg" width="30%" />
+          <p>Created with Adobe Illustrator.</p>
+        </div>
+        <div class="project">
+          <h2>Rewriting History</h2>
+          <h3>September 2023</h3>
+          <img
+            src="img/toppcm_RewHist_final.jpg"
+            class="centerImg"
+            width="40%"
+          />
+          <p>Created using Adobe Photoshop. (I'm in the bottom left!)</p>
+        </div>
+        <div class="project">
+          <h2>Prince Portrait</h2>
+          <h3>September 2023</h3>
+          <img src="img/prince.jpg" class="centerImg" width="30%" />
+          <p>Created using Adobe Illustrator.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-grid">
+      <a href="javascript:void(0);" onclick="scrollToProject(1)">
+        <img
+          src="hatimg/CKIcon.png"
+          class="project-img-1"
+          alt="Colossal Kickoff"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(2)">
+        <img
+          src="hatimg/AgileIcon.png"
+          class="project-img-2"
+          alt="Agile Professional Certification"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(3)">
+        <img
+          src="hatimg/MittIcon.png"
+          class="project-img-3"
+          alt="Interactive Physical Therapy Project"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(4)">
+        <img
+          src="hatimg/MountainIcon.png"
+          class="project-img-4"
+          alt="Snowy Mountains Virtual Production Set"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(5)">
+        <img
+          src="hatimg/DisguiseIcon.png"
+          class="project-img-5"
+          alt="Disguise: Designer Certifications"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(6)">
+        <img
+          src="hatimg/TTIcon.png"
+          class="project-img-6"
+          alt="Tamer Tournament"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(7)">
+        <img
+          src="hatimg/GiftCardsIcon.png"
+          class="project-img-7"
+          alt="The Cornerstone Shop: Keepsake Gift Cards"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(8)">
+        <img
+          src="hatimg/OBTIcon.png"
+          class="project-img-8"
+          alt="On Borrowed Time Animated Poster"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(9)">
+        <img
+          src="hatimg/LogoIcon.png"
+          class="project-img-9"
+          alt="Animated Logo"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(10)">
+        <img
+          src="hatimg/BrandingIcon.png"
+          class="project-img-10"
+          alt="Branding Package"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(11)">
+        <img
+          src="hatimg/HistoryIcon.png"
+          class="project-img-11"
+          alt="Rewriting History"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(12)">
+        <img
+          src="hatimg/PrinceIcon.png"
+          class="project-img-12"
+          alt="Prince Portrait"
+        />
+      </a>
+    </div>
+
+    <p>
+      Hat image from
+      <a href="https://www.stormtechusa.com/products/vintage-knit-beanie-btv-1"
+        >here.</a
+      >
+    </p>
+    <script>
+      let currentOpen = null;
+      let scrollingToProject = false;
+
+      function toggleHatContent(index) {
+        const content = document.getElementById(`hat-content-${index}`);
+        const img = content.previousElementSibling;
+        const hat = img.parentElement;
+
+        if (currentOpen !== null && currentOpen !== content) {
+          currentOpen.classList.remove("open");
+          resetHatImage(currentOpen.previousElementSibling);
+        }
+        console.log("toggleHatContent:" + scrollingToProject);
+        scrollToHat(hat, content, img);
+      }
+
+      function scrollToHat(hat, content, img) {
+        if (content.classList.contains("open")) {
+          content.classList.remove("open");
+          resetHatImage(img);
+          currentOpen = null;
+        } else {
+          content.classList.add("open");
+          setOpenHatImage(img);
+          currentOpen = content;
+          console.log("scrollToHat:" + scrollingToProject);
+          if (!scrollingToProject) {
+            setTimeout(() => {
+              hat.scrollIntoView({ behavior: "smooth" });
+            }, 120);
+          }
+        }
+      }
+
+      function resetHatImage(img) {
+        if (img.classList.contains("hatImg1")) {
+          img.src = "hatimg/LeaderHatClosed.png";
+        } else if (img.classList.contains("hatImg2")) {
+          img.src = "hatimg/CollaborationHatClosed.png";
+        } else if (img.classList.contains("hatImg3")) {
+          img.src = "hatimg/CreativeTechHatClosed.png";
+        } else if (img.classList.contains("hatImg4")) {
+          img.src = "hatimg/GameHatClosed.png";
+        } else if (img.classList.contains("hatImg5")) {
+          img.src = "hatimg/DigitalMarketingHatClosed.png";
+        } else if (img.classList.contains("hatImg6")) {
+          img.src = "hatimg/GraphicHatClosed.png";
+        }
+      }
+
+      function setOpenHatImage(img) {
+        if (img.classList.contains("hatImg1")) {
+          img.src = "hatimg/LeaderHatOpen.png";
+        } else if (img.classList.contains("hatImg2")) {
+          img.src = "hatimg/CollaborationHatOpen.png";
+        } else if (img.classList.contains("hatImg3")) {
+          img.src = "hatimg/CreativeTechHatOpen.png";
+        } else if (img.classList.contains("hatImg4")) {
+          img.src = "hatimg/GameHatOpen.png";
+        } else if (img.classList.contains("hatImg5")) {
+          img.src = "hatimg/DigitalMarketingHatOpen.png";
+        } else if (img.classList.contains("hatImg6")) {
+          img.src = "hatimg/GraphicHatOpen.png";
+        }
+      }
+
+      function scrollToProject(index) {
+        scrollingToProject = true;
+        const project = document.querySelectorAll(".project")[index - 1];
+        const hatContent = project.closest(".hat-content");
+        const hatContents = document.querySelectorAll(".hat-content");
+        const hatIndex = Array.from(hatContents).indexOf(hatContent) + 1;
+        if (!hatContent.classList.contains("open")) {
+          toggleHatContent(hatIndex);
+          setTimeout(() => {
+            project.scrollIntoView({ behavior: "smooth" });
+          }, 120);
+        } else {
+          setTimeout(() => {
+            project.scrollIntoView({ behavior: "smooth" });
+          }, 120);
+        }
+        scrollingToProject = false;
+      }
+    </script>
+  </body>
+</html>
