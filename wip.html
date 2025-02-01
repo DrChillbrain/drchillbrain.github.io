@@ -89,6 +89,12 @@
         display: block;
         margin: 0 auto;
       }
+      a:link {
+        color: #add8e6; /* Light blue */
+      }
+      a:visited {
+        color: #dda0dd; /* Light purple */
+      }
       @media (min-width: 768px) {
         .hat {
           width: 85%;
@@ -487,11 +493,6 @@
             feedback. I worked in a team of six other curators during this
             time.<br />
           </p>
-          <p>
-            <a href="tamertournament.html"
-              >Click here to visit the game's dedicated website.</a
-            >
-          </p>
         </div>
       </div>
     </div>
@@ -591,6 +592,38 @@
             Built on top of MediaWiki code, but with many customizations for
             cloud computing compatability. It's served thousands of users over
             its lifetime.
+          </p>
+        </div>
+        <div class="project">
+          <h2>AI Tutor Website</h2>
+          <h3>May 2024</h3>
+          <iframe
+            class="centerFrame"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3a8ji1GmRM8?si=N4DVp9t6an4TAI8w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p>
+            A website that served as an AI tutor for computer science students.
+            The site was designed to help push students in the right direction
+            by teaching them concepts and methods, rather than spitting out
+            finished code. It featured safeguards against attempting to
+            circumvent this intention, allowing it to be used by professors as
+            an approved AI tool. The site supported four different "mastery
+            levels" to allow students to curate their responses. It also allowed
+            users to view their history of questions and responses.
+          </p>
+          <p>
+            The site was developed with my friend Mike Lehmkuhl over a span of 6
+            weeks. It utilized the OpenAI ChatGPT API, in combination with
+            JavaScript, JQuery, Ajax, and PHP. The database was stored via SQL,
+            and the site was hosted via OpenStack on Miami University's local
+            computer network, for students to access on campus.
           </p>
         </div>
       </div>
@@ -700,7 +733,14 @@
         <img
           src="hatimg/BeastiepediaIcon.png"
           class="project-img-15"
-          alt="Beastiepedia"
+          alt="Beastiepedia Website"
+        />
+      </a>
+      <a href="javascript:void(0);" onclick="scrollToProject(16)">
+        <img
+          src="hatimg/AIIcon.png"
+          class="project-img-16"
+          alt="AI Tutor Website"
         />
       </a>
     </div>
