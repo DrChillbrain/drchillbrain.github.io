@@ -1,0 +1,186 @@
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.hat {
+  margin: 0% 0;
+  transition: transform 0.1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+.hatImg {
+  cursor: pointer;
+  height: auto;
+}
+.hatImg1:hover {
+  content: url("hatimg/LeaderHatOpen.webp");
+}
+.hatImg2:hover {
+  content: url("hatimg/CollaborationHatOpen.webp");
+}
+.hatImg3:hover {
+  content: url("hatimg/CreativeTechHatOpen.webp");
+}
+.hatImg4:hover {
+  content: url("hatimg/GameHatOpen.webp");
+}
+.hatImg5:hover {
+  content: url("hatimg/GraphicHatOpen.webp");
+}
+.hatImg6:hover {
+  content: url("hatimg/ProgramHatOpen.webp");
+}
+.hat-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease, opacity 0.1s ease;
+}
+.hat-content.open {
+  max-height: 5500px;
+  opacity: 1;
+}
+.project {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+.inlineImg {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+.centerImg {
+  display: block;
+  margin: 0 auto;
+}
+.centerFrame {
+  display: block;
+  margin: 0 auto;
+}
+a:link {
+  color: #add8e6; /* Light blue */
+}
+a:visited {
+  color: #dda0dd; /* Light purple */
+}
+@media (min-width: 768px) {
+  .hat {
+    width: 85%;
+  }
+  .hatImg {
+    width: 50%;
+  }
+}
+body {
+  background: linear-gradient(
+    135deg,
+    #000b0b 25%,
+    #001515 25%,
+    #001515 50%,
+    #000b0b 50%,
+    #000b0b 75%,
+    #001515 75%,
+    #001515 100%
+  );
+  background-size: 56.57px 56.57px;
+  animation: scrollBackground 1.5s linear infinite;
+  will-change: background-position;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 56.57px 56.57px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  .hat {
+    width: 90%;
+  }
+  .hat-content {
+    width: 80%;
+  }
+  .hatImg {
+    width: 60%;
+  }
+  .inlineImg {
+    width: 50%;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  .verticalVideo {
+    height: 400px;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90%;
+  margin: 2rem 0;
+}
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.image-grid img {
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
+}
+.image-grid img:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+@media (max-width: 767px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.nav-button {
+  font-family: "Jersey 10", sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.nav-button.active {
+  background-color: #add8e6; /* Light blue */
+  color: black;
+}
+.nav-button.inactive {
+  background-color: #001515;
+  color: white;
+}

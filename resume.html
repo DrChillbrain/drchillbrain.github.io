@@ -1,283 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Casey Topp Portfolio: Resume</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link href="unique.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Outfit"
-    />
+    <link rel="stylesheet" href="hats.css" />
+    <script src="hatscripts.js" defer></script>
+    <title>Casey Topp Resume</title>
   </head>
   <body>
-    <header>
-      <div class="overlay"></div>
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source src="typing.mp4" type="video/mp4" />
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-3">Casey Topp</h1>
-            <p class="lead mb-0">Resume and Portfolio Site</p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--Navigation bar, hamburger menu on mobile)-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-customdarkblue justify-content-center"
-      aria-label="navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample07XL"
-          aria-controls="navbarsExample07XL"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <style>
+      @media (min-width: 1024px) {
+        body {
+          margin: 0 15rem;
+        }
+      }
+    </style>
+    <h1 style="margin-bottom: 0.5rem">Casey Topp</h1>
+    <div class="nav-buttons">
+      <button class="nav-button inactive" onclick="location.href='index.html'">
+        Portfolio
+      </button>
+      <button class="nav-button active">Resume</button>
+    </div>
+    <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+      <a href="https://www.linkedin.com/in/casey-topp-b797b3253/">LinkedIn</a> |
+      <a href="mailto:caseymtopp@gmail.com">caseymtopp@gmail.com</a> |
+      419-953-1805
+    </h4>
+    <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+      Leader, Developer, Artist, Creative Technologist...
+    </h3>
+    <h2 style="margin-top: 0.5rem">I wear a lot of hats.</h2>
+    <h1>Resume</h1>
+    <p>
+      See Certifications, Corporate Partnered Projects, and more on my
+      <a href="index.html">Portfolio!</a>
+    </p>
+    <h2>Qualifications</h2>
+    <ul>
+      <p>
+        • Miami University Class of 2025<br />
+        • Games & Simulation Major<br />
+        • Web Site & Game Technology Focus<br />
+        • Cumulative GPA: 3.96 <br />
+        • President's List (4.00 GPA): Fall '23, Spring '24, Fall '24<br />
+        • Dean's List: Fall '21, Spring '22, Fall '22, Spring '23<br />
+        •
+        <a href="transcript.html" class="link-primary"
+          >View Unofficial Academic Transcript.</a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExample07XL">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="resume.html">Resume</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="games-portfolio.html">Games</a>
-                <a class="dropdown-item" href="immersive-portfolio.html"
-                  >XR and Immersive</a
-                >
-                <a class="dropdown-item" href="mitt-project.html"
-                  >Interactive Physical Therapy Project</a
-                >
-                <a class="dropdown-item" href="design-portfolio.html"
-                  >Graphic Design</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Sidebar-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-3">
-          <p>
-            I'm a 21 year old leader, designer, and creative technologist from
-            Western Ohio. I love thinking outside the box and making cool stuff:
-            Especially interactive experiences!
-          </p>
-          <h3 class="mt-4">Contact and Links</h3>
-          <p>Places to find me and ways to get in touch.</p>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/DrChillbrain"
-                >Github: drchillbrain</a
-              >
-              <a
-                class="nav-link"
-                href="https://www.linkedin.com/in/casey-topp-b797b3253/"
-                >LinkedIn: Casey Topp</a
-              >
-              <a
-                class="nav-link"
-                href="mailto:caseymtopp@gmail.com"
-                class="link-primary"
-                >Email: caseymtopp@gmail.com</a
-              >
-              <a class="nav-link">Phone: 419-953-1805</a>
-            </li>
-          </ul>
-          <hr class="d-sm-none" />
-        </div>
-        <div class="col-sm-8">
-          <h2>My Resume</h2>
-          <h5><b>Certifications</b></h5>
-          <ul>
-            <img src="img/icp.svg" class="img-fluid" width="20%" />
-            <p>
-              <b>• ICAgile Certified Professional</b><br />
-              Understands and applies the Agile methedology for team
-              coordination and leadership. <br />
-              <a
-                href="https://www.icagile.com/credentials/d0565468-b063-4e2b-b770-df6f028dcf2a"
-                class="link-primary"
-                >View Credential.</a
-              >
-            </p>
-            <p>
-              <b>• Disguise: Designer Esentials</b><br />
-              Completed training for use of Disguise Designer software for show
-              programming by an industry veteran.<br />
-              <a href="PortfolioDocs/DisguiseDesignerEssentialsWorkshop.pdf"
-                >View Credential.</a
-              >
-            </p>
-            <p>
-              <b>• Disguise: System Integration</b><br />
-              Completed training for Disguise Designer software for systems
-              programming, networking, and integration to create smooth and
-              efficient shows.<br />
-              <a href="PortfolioDocs/DisguiseSystemsIntegrationWorkshop.pdf"
-                >View Credential.</a
-              >
-            </p>
-          </ul>
-          <h5><b>Qualifications</b></h5>
-          <ul>
-            <p>
-              • Miami University Class of 2025<br />
-              • Games & Simulation Major<br />
-              • Web Site & Game Technology Focus<br />
-              • Cumulative GPA: 3.96 <br />
-              • President's List (4.00 GPA): Fall '23, Spring '24, Fall '24<br />
-              • Dean's List: Fall '21, Spring '22, Fall '22, Spring '23<br />
-              •
-              <a href="transcript.html" class="link-primary"
-                >View Unofficial Academic Transcript.</a
-              >
-            </p>
-          </ul>
-          <h5><b>Code</b></h5>
-          <ul>
-            <p>
-              • 6+ years of programming experience<br />
-              • Experience with Unity, C++, C#, Java, HTML5, Javascript, React
-              Native, react.js, Bootstrap, Express framework, SQL databases, PHP
-              and more<br />
-              • Able to quickly learn and adapt to team-based and propreitary
-              systems.
-            </p>
-          </ul>
-          <h5><b>Software Experience</b></h5>
-          <ul>
-            <p>
-              • XR and Immersive experience with TouchDesigner, Notch, Unreal
-              Engine, and Disguise d3 Designer.<br />
-              • Visual and graphic design expertise with Adobe Illustrator,
-              Adobe Photoshop, Adobe After Effects, Adobe Premiere, Autodesk
-              Maya, and GIMP.<br />
-              • Code experience with Visual Studio Code. Experience using GitHub
-              and GitLab to coordinate group code endeavors.
-            </p>
-          </ul>
-          <h5><b>Work Experience</b></h5>
-          <p></p>
-          <ul>
-            •
-            <b>Miami Summer Scholars Program (Summer 2024)</b>
-            <ul>
-              • Counselor.<br />
-              • Worked with High School students in a "college-lite"
-              experience.<br />
-              • Guided experience and dealt with interpersonal conflicts from
-              adjusting to an unfamiliar enviornment.<br />
-              • Helped ensure students had the best experience possible to sell
-              Miami University as an incredible school.<br />
-            </ul>
-            •
-            <b>iDTech (Summer 2023)</b>
-            <ul>
-              • Instructor.<br />
-              • Worked with students aged 12-16 to teach programming and tech
-              concepts.<br />
-              • Helped moderate and resolve conflicts between students to ensure
-              everyone has a productive learning experience.<br />
-              • Worked in teaching Java for Software Engineering.<br />
-              • Coordinated with coworkers in creating an fun and excellent
-              learning enviornment for students.<br />
-              • Created lesson plans and gave lectures to teach the fundamentals
-              of programming and the Java language.
-            </ul>
-            •
-            <b>The Cornerstone Shop (Summer 2022 - Present)</b>
-            <ul>
-              • Social Media Manager and Producer.<br />
-              • Graphic Designer for print advertising and merchandise.<br />
-              • Working with data analytics from social media, video concepting
-              and production, and graphic design.
-            </ul>
-            •
-            <b>Monfort Family McDonalds (Summer 2018 - Summer 2022)</b>
-            <ul>
-              • Crew Member.<br />
-              • Crew Trainer from 2020 onwards, training new employees at
-              various stations.<br />
-              • Left after 2022 to pursue more career-relevant opportunities,
-              but the experience was incredibly valuable.
-            </ul>
-          </ul>
-          <h5><b>Leadership</b></h5>
-          <ul>
-            <p>
-              • Experience with extracirricular leadership in campus Tabletop
-              Gaming Club, especially with regards to event planning,
-              coordination, and professional communication.<br />
-              • Coordinated funding and planning for yearly convention trips
-              with University authorities and convention organizers at
-              ReedPop.<br />
-              • Worked with other club leadership for organizing large-scale
-              convention-style events each semester, including outside
-              contractors and special guests, gathering and acting on event
-              feedback, and creating transition materials for future leaders.<br />
-              • Additional 5+ years of leadership experience moderating an
-              online game design community, including large-scale event
-              planning.
-            </p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-      <p>Last updated 1/3/2025</p>
-    </div>
+      </p>
+    </ul>
+    <h2>Code</h2>
+    <ul>
+      <p>
+        • 6+ years of programming experience<br />
+        • Experience with Unity, C++, C#, Java, HTML5, Javascript, React Native,
+        react.js, Bootstrap, Express framework, SQL databases, PHP and more<br />
+        • Able to quickly learn and adapt to team-based and propreitary systems.
+      </p>
+    </ul>
+    <h2>Software Experience</h2>
+    <ul>
+      <p>
+        • XR and Immersive experience with TouchDesigner, Notch, Unreal Engine,
+        and Disguise d3 Designer.<br />
+        • Visual and graphic design expertise with Adobe Illustrator, Adobe
+        Photoshop, Adobe After Effects, Adobe Premiere, Autodesk Maya, and
+        GIMP.<br />
+        • Code experience with Visual Studio Code. Experience using GitHub and
+        GitLab to coordinate group code endeavors.
+      </p>
+    </ul>
+    <h2>Work Experience</h2>
+    <p></p>
+    <ul>
+      •
+      <b>Miami Summer Scholars Program (Summer 2024)</b>
+      <ul>
+        • Counselor.<br />
+        • Worked with High School students in a "college-lite" experience.<br />
+        • Guided experience and dealt with interpersonal conflicts from
+        adjusting to an unfamiliar enviornment.<br />
+        • Helped ensure students had the best experience possible to sell Miami
+        University as an incredible school.<br />
+      </ul>
+      •
+      <b>iDTech (Summer 2023)</b>
+      <ul>
+        • Instructor.<br />
+        • Worked with students aged 12-16 to teach programming and tech
+        concepts.<br />
+        • Helped moderate and resolve conflicts between students to ensure
+        everyone has a productive learning experience.<br />
+        • Worked in teaching Java for Software Engineering.<br />
+        • Coordinated with coworkers in creating an fun and excellent learning
+        enviornment for students.<br />
+        • Created lesson plans and gave lectures to teach the fundamentals of
+        programming and the Java language.
+      </ul>
+      •
+      <b>The Cornerstone Shop (Summer 2022 - Present)</b>
+      <ul>
+        • Social Media Manager and Producer.<br />
+        • Graphic Designer for print advertising and merchandise.<br />
+        • Working with data analytics from social media, video concepting and
+        production, and graphic design.
+      </ul>
+      •
+      <b>Monfort Family McDonalds (Summer 2018 - Summer 2022)</b>
+      <ul>
+        • Crew Member.<br />
+        • Crew Trainer from 2020 onwards, training new employees at various
+        stations.<br />
+        • Left after 2022 to pursue more career-relevant opportunities, but the
+        experience was incredibly valuable.
+      </ul>
+    </ul>
+    <h2>Leadership</h2>
+    <ul>
+      <p>
+        • Experience with extracirricular leadership in campus Tabletop Gaming
+        Club, especially with regards to event planning, coordination, and
+        professional communication.<br />
+        • Coordinated funding and planning for yearly convention trips with
+        University authorities and convention organizers at ReedPop.<br />
+        • Worked with other club leadership for organizing large-scale
+        convention-style events each semester, including outside contractors and
+        special guests, gathering and acting on event feedback, and creating
+        transition materials for future leaders.<br />
+        • Additional 5+ years of leadership experience moderating an online game
+        design community, including large-scale event planning.
+      </p>
+    </ul>
+    <p>Last updated 2/13/25.</p>
   </body>
 </html>
