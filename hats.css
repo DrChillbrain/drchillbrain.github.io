@@ -50,7 +50,7 @@ body {
   transition: max-height 0.1s ease, opacity 0.1s ease;
 }
 .hat-content.open {
-  max-height: 6500px;
+  max-height: 100000px;
   opacity: 1;
 }
 .project {
